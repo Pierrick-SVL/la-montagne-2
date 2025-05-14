@@ -1,0 +1,14 @@
+@use '../base/variables';
+
+
+button {
+    background-color: variables.$bg-color;
+    color: variables.$font-color;
+    font-family: variables.$button-font;
+    transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: variables.$font-color;
+    color: variables.$bg-color;
+}

@@ -1,0 +1,12 @@
+@use 'variables';
+
+body {
+    background: url(../images/bg.jpg) fixed center / cover;
+    max-width: 1300px;
+}
+
+li {
+    font-family: variables.$li-font;
+    font-weight: bold;
+    color: variables.$bg-color;
+}

@@ -1,0 +1,58 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+header {
+
+    .header-icones {
+        display: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-top {
+        text-align: center;
+        width: 90%;
+        margin-bottom: 70px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    i {
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+        padding: 15px;
+    }
+
+    .header-bottom {
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-bottom: 0;
+    }
+
+    li {
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 5px;
+    }
+}
