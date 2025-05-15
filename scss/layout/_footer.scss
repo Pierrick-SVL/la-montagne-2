@@ -1,0 +1,136 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .footer-container {
+        width: 90%;
+        background-color: variables.$bg-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-container::after {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        background-color: black;
+        opacity: 0.2;
+        width: 100%;
+    }
+
+    form {
+
+        width: 70%;
+
+        input {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.2); // noir à 20% d’opacité
+            border-radius: 2px;
+            height: 20px;
+        }
+
+        textarea {
+            resize: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.2); // noir à 20% d’opacité
+            border-radius: 2px;
+        }
+
+        button {
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-bottom-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        .infos-contact:not(:last-child) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .infos-contact::after {
+            position: absolute;
+            display: block;
+            content: "";
+            bottom: 0;
+            height: 1px;
+            background-color: black;
+            opacity: 0.2;
+            width: 100%;
+        }
+
+        .infos-contact1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .infos-contact-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            width: 70%;
+        }
+
+        .div-h3 {
+            width: 30%;
+        }
+
+        h3 {
+            color: variables.$font-color;
+            font-size: 0.6rem;
+        }
+
+        p {
+            color: variables.$font-color;
+            font-size: 0.45rem;
+        }
+
+        i {
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            font-size: 0.7rem;
+            padding: 5px;
+        }
+    }
+}

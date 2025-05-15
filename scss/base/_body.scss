@@ -10,3 +10,8 @@ li {
     font-weight: bold;
     color: variables.$bg-color;
 }
+
+form label {
+    font-family: variables.$font-primary;
+    font-size: 0.7rem;
+}
