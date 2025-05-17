@@ -170,9 +170,36 @@ main {
 /************************** MEDIA QUERIES **************************/
 
 @media(min-width: 768px) {
-    /* Styles pour tablette et plus */
+    .section2 {
 
+        .section2-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-items: center;
+            padding-top: 30px;
+            position: relative;
 
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-color: black;
+                opacity: 0.2;
+                width: 1px;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            button {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
 
 @media(min-width: 1024px) {

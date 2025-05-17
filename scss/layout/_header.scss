@@ -24,6 +24,7 @@ header {
     }
 
     i {
+        font-size: 0.8rem;
         border-radius: 50%;
         color: white;
         border: 1px solid white;
@@ -62,38 +63,83 @@ header {
 @media(min-width: 768px) {
 
     /* Styles pour tablette et plus */
-    .header-top {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    header {
 
-        i {
-            margin-top: 50px;
-            width: 2%;
+        .header-top {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+
+            i {
+                margin-top: 20px;
+                width: 2%;
+                font-size: 1rem;
+            }
+        }
+
+        .header-top-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                width: 60%;
+                font-size: 2.5rem;
+            }
+
+            p {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        }
+
+        .header-bottom {
+
+            nav {
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            ul {
+                background-color: transparent;
+                margin-top: 0;
+
+                li {
+                    cursor: pointer;
+                    padding: 20px;
+                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: black;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .header-icones {
+                display: flex;
+
+                i {
+                    border: none;
+                    transition: transform 0.2s;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(2);
+                    }
+                }
+            }
         }
     }
-
-    .header-top-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-        h1 {
-            width: 60%;
-            font-size: 2.5rem;
-        }
-
-        p {
-            width: 100%;
-            font-size: 0.9rem;
-        }
-    }
-
 }
 
 @media(min-width: 1024px) {
-    /* Styles pour desktop */
+    .container {
+        width: 100%;
+    }
 
 
 }

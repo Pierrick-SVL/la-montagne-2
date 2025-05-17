@@ -138,9 +138,57 @@ footer {
 /************************** MEDIA QUERIES **************************/
 
 @media(min-width: 768px) {
-    /* Styles pour tablette et plus */
+    footer {
 
+        .footer-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            position: relative;
 
+            &::after {
+                position: absolute;
+                content: "";
+                width: 1px;
+                background-color: black;
+                opacity: 0.2;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+
+            .form-container {
+
+                button {
+                    margin-top: 20px;
+                }
+            }
+
+            .footer-bottom-container {
+                height: 100%;
+                justify-content: space-around;
+                align-items: center;
+
+                .infos-contact {
+                    justify-content: flex-start;
+
+                    &::after {
+                        bottom: -30px;
+                    }
+                }
+
+                .infos-contact-container {
+                    margin-top: 0;
+                    padding-bottom: 0;
+                    margin-left: 30px;
+                }
+
+                .infos-contact1 {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
 }
 
 @media(min-width: 1024px) {
