@@ -33,20 +33,22 @@ header {
 
     .header-bottom {
         width: 90%;
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
     nav {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     ul {
         display: flex;
         flex-direction: row;
-        padding: 0;
         gap: 15px;
-        background-color: rgba(255, 255, 255, 0.2);
         margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
     }
 
     li {
@@ -54,11 +56,29 @@ header {
         text-transform: uppercase;
         font-size: 0.7rem;
         text-align: center;
-        padding: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
     }
 }
 
 /************************** MEDIA QUERIES **************************/
+
+@media(min-width: 550px) {
+
+    header {
+
+        ul {
+            gap: 50px;
+        }
+    }
+}
+
 
 @media(min-width: 768px) {
 
@@ -108,14 +128,7 @@ header {
                 margin-top: 0;
 
                 li {
-                    cursor: pointer;
                     padding: 20px;
-                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
-                    &:hover {
-                        color: black;
-                        background-color: white;
-                    }
                 }
             }
 
@@ -136,10 +149,21 @@ header {
     }
 }
 
-@media(min-width: 1024px) {
-    .container {
-        width: 100%;
+@media(min-width: 1200px) {
+    header {
+
+        .header-top {
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        .header-bottom {
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
     }
-
-
 }

@@ -170,6 +170,15 @@ main {
 /************************** MEDIA QUERIES **************************/
 
 @media(min-width: 768px) {
+
+    .section1-bottom-container {
+
+        .img-section1 {
+            height: 300px;
+            margin-top: 0;
+        }
+    }
+
     .section2 {
 
         .section2-container {
@@ -205,5 +214,78 @@ main {
 @media(min-width: 1024px) {
     /* Styles pour desktop */
 
+    .section1-container {
 
+        .section1-top-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            h1 {
+                font-size: 2rem;
+                width: 55%;
+            }
+
+
+            p {
+                width: 80%;
+            }
+        }
+
+        .section1-bottom-container {
+
+            .img-section1 {
+                height: 400px;
+                width: 80%;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .section2-container {
+
+        .section2-top-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            h2 {
+                width: 70%;
+            }
+
+            .top-img-section2 {
+                height: 250px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        .section2-bottom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            h2 {
+                width: 70%;
+            }
+
+            .bottom-img-section2 {
+                height: 250px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
 }

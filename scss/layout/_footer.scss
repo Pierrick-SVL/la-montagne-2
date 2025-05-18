@@ -192,7 +192,19 @@ footer {
 }
 
 @media(min-width: 1024px) {
-    /* Styles pour desktop */
+    footer {
+
+        .infos-contact-container {
 
 
+            .div-h3 h3 {
+                font-size: 0.7rem;
+            }
+
+
+            .div-p p {
+                font-size: 0.6rem;
+            }
+        }
+    }
 }
